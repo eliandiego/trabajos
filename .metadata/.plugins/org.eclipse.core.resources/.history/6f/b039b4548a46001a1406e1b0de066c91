@@ -27,11 +27,10 @@ public class SmartWatch {
 				//Muestra datos del arreglo
 				//System.out.printf("arreglo %d \n",(Integer.parseInt(temp)));
 				
-				if ((Integer.parseInt(temp)) > 200 && (Integer.parseInt(temp)) < 100000) {
+				if ((Integer.parseInt(temp)) > 200 && (Integer.parseInt(temp)) < 100000)
 					pasostotales.add((Integer.parseInt(temp)));
-					suma=suma + Integer.parseInt(temp);
-				}
-			} catch (Exception e) {}
+				suma+=Integer.parseInt(temp);
+				} catch (Exception e) {}
 		}
 		System.out.printf("La suma de pasos es %d  y el promedio es %d \n",suma,suma/pasostotales.size());
 		return (pasostotales);		

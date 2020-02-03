@@ -1,5 +1,4 @@
 package smart;
-//Archivo subido a git mediante terminal
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -8,7 +7,6 @@ import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 // parametros de prueba 120000 12500 25 200 25535 225566 22541 25588 255663 300000
-//No se realiza el calculo del promedio, se debe corregir
 public class SmartWatch {
 	public static void main(String[] ARGS) {
 		
@@ -27,13 +25,11 @@ public class SmartWatch {
 				//Muestra datos del arreglo
 				//System.out.printf("arreglo %d \n",(Integer.parseInt(temp)));
 				
-				if ((Integer.parseInt(temp)) > 200 && (Integer.parseInt(temp)) < 100000) {
+				if ((Integer.parseInt(temp)) > 200 && (Integer.parseInt(temp)) < 100000)
 					pasostotales.add((Integer.parseInt(temp)));
-					suma=suma + Integer.parseInt(temp);
-				}
-			} catch (Exception e) {}
+				} catch (Exception e) {}
+		
 		}
-		System.out.printf("La suma de pasos es %d  y el promedio es %d \n",suma,suma/pasostotales.size());
 		return (pasostotales);		
 	}
 	
